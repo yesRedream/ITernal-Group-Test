@@ -217,7 +217,7 @@ ul {
     left: 19px;
     top: 50%;
     display: block;
-    background: url(/images/search.svg) center center no-repeat;
+    background: url(../images/search.svg) center center no-repeat;
     width: 18px;
     height: 18px;
     transform: translateY(-50%); }
@@ -310,7 +310,7 @@ ul {
       top: 50%;
       width: 46px;
       height: 46px;
-      background: url(/images/light-vader.svg) center center no-repeat;
+      background: url(../images/light-vader.svg) center center no-repeat;
       transform: translate(-50%, -50%); }
   .catalog__item .item__content {
     padding: 0 24px 24px 24px; }
