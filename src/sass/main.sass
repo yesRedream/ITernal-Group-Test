@@ -1,0 +1,30 @@
+@import 'normalize'
+@import 'base'
+@import 'navigation'
+@import 'header'
+@import 'search-sort'
+@import 'catalog'
+@import 'catalog-error'
+
+.wrapper
+  display: flex
+  height: 100vh
+  max-height: 100vh
+  font-family: 'Roboto', sans-serif
+
+
+.wrapper__header-main
+  flex: 1 1 auto
+  display: flex
+  flex-direction: column
+  min-width: 320px
+  overflow: hidden
+
+.main
+  flex: 1 1 auto
+  padding: 46px 100px
+  height: calc(100vh - 80px)
+  overflow-y: auto
+
+  @media only screen and (max-width: 992px)
+    padding: 46px 25px

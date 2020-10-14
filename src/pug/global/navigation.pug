@@ -1,0 +1,7 @@
+nav.navigation
+    h1.navigation__header Navigation
+
+    ul.navigation__list
+        - for (let x = 0; x < 6; x++)
+            li.navigation__item
+                a(href="#")="Item" + (x + 1)
