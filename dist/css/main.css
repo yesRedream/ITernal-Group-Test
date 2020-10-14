@@ -279,31 +279,35 @@ ul {
   display: flex;
   flex-wrap: wrap; }
 
-.catalog__item {
+.catalog__card {
   width: 23%;
   margin-right: 2%;
   margin-bottom: 40px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s; }
+  .catalog__card:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15); }
   @media only screen and (max-width: 1440px) {
-    .catalog__item {
+    .catalog__card {
       width: 30%;
       margin-right: 3%; } }
   @media only screen and (max-width: 1280px) {
-    .catalog__item {
+    .catalog__card {
       width: 48%;
       margin-right: 2%; } }
   @media only screen and (max-width: 992px) {
-    .catalog__item {
+    .catalog__card {
       width: 100%;
       margin-right: 0; } }
-  .catalog__item .item__img {
+  .catalog__card .card__img {
     width: 100%;
     height: 245px;
     background-color: #121232;
     position: relative; }
-    .catalog__item .item__img::before {
+    .catalog__card .card__img::before {
       content: "";
       position: absolute;
       left: 50%;
@@ -312,21 +316,21 @@ ul {
       height: 46px;
       background: url(../images/light-vader.svg) center center no-repeat;
       transform: translate(-50%, -50%); }
-  .catalog__item .item__content {
+  .catalog__card .card__content {
     padding: 0 24px 24px 24px; }
-  .catalog__item .item__header {
+  .catalog__card .card__header {
     margin: 16px 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 24px;
     color: #232735; }
-  .catalog__item .item__spec {
+  .catalog__card .card__spec {
     margin-top: 0;
     margin-bottom: 8px;
     font-weight: 400;
     font-size: 14px;
     color: #505565; }
-    .catalog__item .item__spec::first-child {
+    .catalog__card .card__spec::first-child {
       margin-top: 16px; }
 
 .catalog-error {
